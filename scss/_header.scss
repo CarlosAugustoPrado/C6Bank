@@ -123,6 +123,7 @@ header {
     }
   }
   @include responsive (480px) {
+    background: url(../img/background-mobile.jpg);
     height: 8.8rem;
     .container {
       justify-content: space-between;
