@@ -1,5 +1,5 @@
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -66,7 +66,41 @@ header {
       
     }
   }
-
   
-  
+  @include responsive (1150px) {
+    nav {
+      ul {
+        li {
+          a{
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+    button {
+      width: 18rem;
+      font-size: 1.3rem;
+      margin-left: 41rem;
+    }
+    .logo {
+      img {
+        height: 2rem;
+        width: 8rem;
+        margin-left: 0rem;
+      }
+    }
+  }
+  @include responsive (991px) {
+    nav {
+      display: none;
+    }
+    button {
+      margin-left: 45rem;
+    }
+    .logo {
+      img {
+        margin-left: 3rem
+      }
+    }
+  }
 }

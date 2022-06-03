@@ -1,11 +1,11 @@
 .s-titulos {
-  width: 100%;
-  max-width: 192rem;
+  width: 100%;  
   height: 70rem;
   background: url('../img/background.svg') no-repeat;
+  background-size: 100%;
   .programa {
     display: flex;
-    padding-top: 18.9rem;
+    padding-top: 17.9rem;
     width: 100%;
     max-width: 38.6rem;
     button {
@@ -67,8 +67,25 @@
     }
 
   }
-  
+  @include responsive (1150px) {    
+      height: 49rem;
+      background-position-y: 70px;           
+    
+    .programa {
+      padding-top: 9.9rem;     
+      p {
+        font-size: 1.3rem;
+      }
+    }    
+      
+  }
+  @include responsive (991px) {
+    .programa {
+      margin-left: 3rem;
+    }
+  }
 }
+
 
 .s-cards {
   .container {
@@ -145,6 +162,25 @@
       }
     }
   }
+
+  @include responsive (1150px) {
+    .left-area {
+      padding-top: 3.6rem;
+      h3 {
+        padding-bottom: 4rem;
+      }
+    }
+    .right-area {
+      .image { 
+        margin-bottom: 8.1rem;
+        img {
+          height: 74rem;
+          margin-right: 5rem;          
+      }
+    } 
+  }
+  }
+  
 }
 
 .s-banco {
