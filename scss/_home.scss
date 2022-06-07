@@ -210,119 +210,135 @@
 
 .s-cards {
   .container {
-    width: 100%;
-    display: flex;  
+    display: flex;
     justify-content: space-between;
-    
+    align-items: flex-start;
   }
   .left-area {
-    padding-top: 9.6rem;    
-    h2 {
-      padding-bottom: 0.8rem;
+    margin-top: 9.6rem;
+    width: 100%;
+    max-width: 71.8rem;
+    
+    .titulos {
+      margin-bottom: 9.5rem;
+      h2 {
+        margin-bottom: 0.8rem;
+      }
     }
-    h3 {
-      padding-bottom: 10rem;
-    }
-    max-width: 62.5rem;
-    height: 41.2rem;
     ul {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;  
       li {
         width: 50%;
-        max-width: 26rem;
-        margin-bottom: 6.8rem;
-        p {          
+        h5 {
+          margin-bottom: 0.8rem;
+          width: 20rem;
+        }
+        p {
           font-weight: 400;
           font-size: 1.6rem;
-          line-height: 150%;          
-          color: #616161;
-          margin-top: 0.8rem;
+          line-height: 150%;
+          color: $gray-brand;
         }
-        .icon-card {
-          width: 2.2rem;
-          height: 1.6rem;
-          margin-bottom: 1.1rem;
+        .card {
+          max-width: 25.9rem;
+          margin-bottom: 6.8rem;          
+          .icon-card {
+            width: 2.2rem;
+            height: 1.6rem;
+            margin-bottom: 1.1rem;            
+          }
+          .icon-transfer {
+            width: 1.8rem;
+            height: 2.2rem;
+            margin-bottom: 0.6rem;
+          }
+          .icon-money {
+            width: 1.2rem;
+            height: 2.2rem;
+            margin-bottom: 1.3rem;
+          }
+          .icon-clock {
+            width: 2rem;
+            height: 2rem;
+            margin-bottom: 1.5rem;
+          }
+          .retangulo {
+            margin-bottom: 1.6rem;
+          }
         }
-        .icon-transfer {
-          width: 1.8rem;
-          height: 2.2rem;
-          margin-bottom: 1rem;
-        }
-        .icon-money {
-          width: 1.2rem;
-          height: 2.2rem;
-          margin-bottom: 1.3rem;
-        }
-        .icon-clock {
-          width: 2rem;
-          height: 2rem;
-          margin-bottom: 1.5rem;
-        }        
-        .retangulo {
-          margin-bottom: 1.6rem;
-        }
-        .retangulo-especial {
-          margin-bottom: 1.2rem;
-        }    
       }
-      
     }
   }
   .right-area {
     .image {
-      margin-bottom: 19.1rem;
       img {
-      position: relative;
-      width: 100%;
-      max-width: 46.7rem;
-      height: 86rem;
-      margin-top: -5rem;
+        margin-top: -8rem;
       }
     }
   }
 
-  @include responsive (991px) {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    .left-area {
-      max-width: 45rem;
-      padding-top: 5.6rem;
-      h2 {
-        font-size: 3rem;
+  @include responsive (1440px) {
+    .right-area {
+      .image {
+        img {
+          margin-top: -2rem;
+        }
       }
-      h3 {
-        font-size: 2.2rem;
+    }
+  }
+  @include responsive (991px) {
+    .container {
+      margin-left: 3rem;
+    }
+    .left-area {
+      margin-top: 2.6rem;
+      margin-right: 3rem;
+      width: 100%;
+      max-width: 99.1rem;
+      .titulos {
+        margin-bottom: 6.5rem;
+        text-align: center;
       }
       ul {
         li {
-          max-width: 21rem;
+          width: 25%;
+          .card {
+            max-width: 20.9rem;
+            .icon-money {
+              margin-bottom: 0.8rem;
+            }
+            .icon-clock {
+              margin-bottom: 0.8rem;
+            }
+          }
         }
       }
     }
     .right-area {
       .image {
-        img {
-          max-width: 41.7rem;
-          margin-top: -8rem;
-        }
+        display: none;
       }
     }
   }
   @include responsive (800px) {
     .left-area {
-      padding-top: 1.6rem;
-      h3 {
-        padding-bottom: 4rem;
-
+      .titulos {
+        h2 {
+          font-size: 3rem;
+        }
+        h3 {
+          font-size: 2rem;
+        }
       }
       ul {
         li {
-          margin-bottom: 2.8rem;
+          .card {
+            max-width: 13.9rem;
+          }
           h5 {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
+            width: 16rem;
           }
           p {
             font-size: 1.2rem;
@@ -330,58 +346,90 @@
         }
       }
     }
-    .right-area {
-      .image {
-        img {
-          margin-top: -22rem;
-        }
-      }
-    }
   }
   @include responsive (600px) {
     .left-area {
-      width: 60rem;
-      width: 100%;  
-      margin-bottom: 5rem;    
-      h2 {
-        font-size: 2.2rem;
-        text-align: center;
-        position: relative;
-        left: 4rem;
-                     
-      }
-      h3 {
-        font-size: 1.8rem;
-        text-align: center;
-        position: relative;
-        left: 4rem;
-        
+      .titulos {
+        margin-bottom: 3.5rem;
+        h2 {
+          font-size: 2rem;
+        }
+        h3 {
+          font-size: 1.5rem;
+        }
       }
       ul {
-        position: relative;
-        left: 4rem;
         li {
-          h5 {
-            font-size: 1.3rem;
+          .card {
+            max-width: 10.9rem;
+            h5 {
+              width: 10rem;
+            }
           }
-          p {
-            font-size: 1.1rem;
-          }
-          
         }
       }
     }
-    .right-area {
-      display: none;
-    }
   }
   @include responsive (480px) {
-    
+    .container {
+      margin-left: 2rem;
+    }
+    .left-area {
+      margin-top: 5rem;
+      
+      .titulos {
+        h2 {
+          font-size: 3.2rem;
+        }
+        h3 {
+          font-size: 2.4rem;
+        }
+      }
+      ul {
+        flex-direction: column;
+        li {
+          width: 100%;
+          
+          .card {
+            max-width: 25.9rem;
+            text-align: center;
+            margin-left: 1.7rem;
+            h5 {
+              max-width:37.5rem;
+              width: 100%;
+              font-size: 1.8rem;
+            }
+            p {
+              font-size: 1.6rem;
+            }
+            .icon-card {
+              margin-left: 12rem;
+              .retangulo {
+                margin-left: 12.3rem
+              }
+            }
+            .icon-transfer {
+              margin-left: 12.2rem             
+            }
+            .retangulo {
+              margin-left: 12.3rem
+            }
+            .icon-clock {
+              margin-left: 12.2rem
+            }
+            .icon-money {
+              margin-left: 12.5rem
+            }
+          }
+        }
+      }
+    }
   }
 }
 
 .s-banco {
-  .container {   
+  .container {
+    margin-top: 19.1rem;   
     width: 100%;
     max-width: 121.6rem;
     height: 60.7rem;
@@ -431,6 +479,12 @@
           letter-spacing: 0.02em;
           text-transform: uppercase;
           color: $gray-brand;
+          transition: all .3s;
+          &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+            color: $yellow-brand;
+          }
         }
       }    
     } 
@@ -494,8 +548,51 @@
       }     
     }
   }
-  @include responsive (480px) {
-    display: none;
+  @include responsive (991px) {
+    .container {
+      margin-top: 0;
+      margin-left: 3rem;
+      max-width: 93.6rem;    
+      .upper {
+        .titulos{
+          h2 {
+            font-size: 3rem;
+          }
+          h3 {
+            font-size: 2rem;
+          }
+        }
+      .btns {      
+        .empresa {
+          width: 20rem;
+        }
+        .you {
+          width: 20rem;
+        }           
+      }   
+      
+    }
+      .lower {
+        height: 35.4rem;
+        .left {
+          padding-left: 6.3rem;
+          max-width: 37.1rem;
+          padding-top: 5.7rem;
+        }
+        .right {
+          .celular {
+            top: 10.6rem;
+          }
+          .cartao {
+            top: -7rem;
+            right: 0.5rem;
+          }
+        }
+        .logo-c6 {
+          top: 31.3rem;
+        }
+      }
+    }
   }
 }
     
