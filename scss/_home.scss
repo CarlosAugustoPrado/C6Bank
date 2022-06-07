@@ -459,6 +459,7 @@
           text-transform: uppercase;
           color: $white;
           transition: all 0.3s;
+          
           &:hover {
             transform: scale(1.1);
             cursor: pointer;
@@ -480,6 +481,7 @@
           text-transform: uppercase;
           color: $gray-brand;
           transition: all .3s;
+          
           &:hover {
             transform: scale(1.1);
             cursor: pointer;
@@ -803,5 +805,5 @@
   }
 }
     
- 
+
   

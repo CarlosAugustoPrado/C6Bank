@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
   <title>C6 Bank</title>
 </head>
@@ -31,22 +32,22 @@
 
   <section class="s-titulos">
     <div class="container">
-      <div class="programa">
+      <div class="programa" data-aos="fade-right">
         <button class="btn-novo">Novo</button>
         <p>Conheça nosso Programa de Pontos Átomos</p>
       </div>
-      <div class="titulo">
+      <div class="titulo" data-aos="fade-right">
         <h1>Um banco transparente, completo e com a sua cara</h1>
         <p>Conta digital e cartão de crédito gratuitos </br>
           Saques e transferências sem tarifa.</p>
       </div>
-      <button class="btn-produtos">Nossos produtos</button>
+      <button class="btn-produtos" data-aos="fade-right">Nossos produtos</button>
     </div>
   </section>
 
   <section class="s-cards">
     <div class="container">      
-      <div class="left-area">
+      <div class="left-area" data-aos="fade-up">
         <div class="titulos">
           <h2>Sem tarifas:</h2>
           <h3>economize seu dinheiro</h3>
@@ -94,7 +95,7 @@
           </li>
         </ul>        
       </div>
-      <div class="right-area">
+      <div class="right-area" data-aos="fade-right">
         <div class="image">
           <img src="/img/cartoes.svg" alt="">
         </div>
@@ -104,7 +105,7 @@
 
   <section class="s-banco">
     <div class="container">
-      <div class="upper">
+      <div class="upper" data-aos="flip-right">
         <div class="titulos">
           <h2>Um banco completo</h2>
           <h3>com produtos exclusivos</h3>
@@ -114,7 +115,7 @@
           <button class="empresa">PARA SUA EMPRESA</button>
         </div>
       </div>
-      <div class="lower">
+      <div class="lower" data-aos="fade-up">
         <div class="left"> 
           <div class="titulos">
             <h4>Conta com cartão </br> C6 Business</h4>
@@ -141,5 +142,15 @@
       </div>
     </div>
   </section>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
 </body>
 </html>
